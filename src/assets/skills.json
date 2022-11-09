@@ -1,0 +1,58 @@
+{
+
+"HTML":{
+    "skillName": "HTML",
+    "color": {"dark":"#E96228", "light": "#E96228"},
+    "percentage": "90%"
+},
+"CSS":{
+    "skillName": "CSS",
+    "color": {"dark": "#4CA3E6", "light": "#1B6DB2"},
+    "percentage": "60%"
+},
+"JavaScript":{
+    "skillName": "JavaScript",
+    "color": {"dark": "#CFB430", "light": "#3C9800"},
+    "percentage": "70%"
+},
+"PHP":{
+    "skillName": "PHP",
+    "color": {"dark": "#9499E0", "light": "#797DB8"},
+    "percentage": "60%"
+},
+"Laravel":{
+    "skillName": "Laravel",
+    "color": {"dark": "#FF6F61", "light": "#F72C1F"},
+    "percentage": "50%"
+},
+"Vue":{
+    "skillName": "Vue",
+    "color": {"dark": "#3FB27F", "light": "#349469"},
+    "percentage": "50%"
+},
+"DigitalMarketing":{
+    "skillName": "Digital Marketing",
+    "color": {"dark": "#F7B500", "light": "#D6272C"},
+    "percentage": "60%"
+},
+"ContentWriting":{
+    "skillName": "Content Writing",
+    "color": {"dark": "#04B3BD", "light": "#039299"},
+    "percentage": "70%"
+},
+"WordPress":{
+    "skillName": "WordPress",
+    "color": {"dark": "#74BC4B", "light": "#21759B"},
+    "percentage": "80%"
+},
+"Figma":{
+    "skillName": "Figma",
+    "color": {"dark": "#9D8EFF", "light": "#9c56f6"},
+    "percentage": "60%"
+},
+"SkillBars": {
+    "skillName": "Making up skill bar values",
+    "color": {"dark": "linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red)", "light": "linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red)"},
+    "percentage": "100%"
+}
+}
