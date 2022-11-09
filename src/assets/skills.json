@@ -51,7 +51,7 @@
     "percentage": "60%"
 },
 "SkillBars": {
-    "skillName": "Making up skill bar values",
+    "skillName": "Making up skill bar values!",
     "color": {"dark": "linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red)", "light": "linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red)"},
     "percentage": "100%"
 }
