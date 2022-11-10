@@ -220,7 +220,7 @@ checkScreen();
 
 @media(min-width: 769px) {
   nav {
-    height: 13vh;
+    height: auto;
     width: 100vw;
     position: fixed;
     z-index: 100;
