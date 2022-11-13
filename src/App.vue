@@ -9,9 +9,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import { faSquareGithub, faLinkedin, faSquareInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faSquareGithub, faLinkedin, faSquareInstagram, faEnvelope)
+library.add(faSquareGithub, faLinkedin, faSquareInstagram, faEnvelope, faFile)
 
 const titleTag = document.querySelector('title');
 </script>
@@ -27,7 +27,7 @@ const titleTag = document.querySelector('title');
             I'm Jules Sandoz
           </h1>
           <p class="subtitle">
-            I build websites and help you improve your online presence.
+          Digital Swiss Army Knife
           </p>
         </div>
         <div class="cta-container">
@@ -96,6 +96,9 @@ const titleTag = document.querySelector('title');
               <font-awesome-icon icon="fa-solid fa-envelope" fixed-width /><a class="contact-link"
                 href="mailto:contact@jules-sandoz.com">contact@jules-sandoz.com</a>
             </div>
+            <div class="link">
+              <font-awesome-icon icon="fa-solid fa-file" fixed-width /><a class="contact-link" href="https://www.dropbox.com/s/tmg93yqnnv5lkgm/CV-JS.pdf?dl=1" target="_blank" rel="noopener noreferrer">Download my resume</a>
+            </div>
           </div>
         </div>
       </section>
@@ -110,6 +113,8 @@ const titleTag = document.querySelector('title');
   flex-direction: column;
   flex-wrap: wrap;
   font-family: "Montserrat", sans-serif;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 .title-container {
@@ -130,7 +135,7 @@ const titleTag = document.querySelector('title');
 #home .text-container {
   min-width: 35vw;
   max-width: 40vw;
-  padding: 27vh 5vw 3vh 15vw;
+  padding: 30vh 5vw 3vh 15vw;
   overflow: hidden;
 }
 
@@ -221,13 +226,22 @@ a.cta {
   cursor: pointer;
   width: 40%;
   height: 10%;
-  transition: background-color 0.5s ease, width 0.5s ease, height 0.5s ease;
+  transition: 0.5s ease;
 }
 
 a.cta:hover {
-  background-color: #3c6799;
   width: 41%;
   height: 11%;
+  line-height: 4.7vh;
+  padding: 1.2vh 0.2vw;
+}
+
+.dark a.cta:hover{
+  background-color: #3c6799;
+}
+
+.light a.cta:hover{
+  background-color: #f3f1ef;
 }
 
 /*************************** ABOUT ***************************/
