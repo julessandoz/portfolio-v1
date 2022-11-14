@@ -13,9 +13,7 @@ const colorLight = props.color.light
 <template>
   <p>{{ skill }}</p>
   <div class="bar-container">
-    <Transition ease>
       <div class="skill-bar"></div>
-    </Transition>
   </div>
 </template>
 
@@ -37,8 +35,13 @@ const colorLight = props.color.light
 
 .skill-bar {
   height: 100%;
-  width: v-bind(percentage);
+  width: 0;
   border-radius: 20px;
+  transition: width 1s ease;
+}
+
+.skill-bar.full {
+  width: v-bind(percentage);
 }
 
 .dark .skill-bar {
