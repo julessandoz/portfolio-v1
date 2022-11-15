@@ -35,7 +35,6 @@ onMounted(() => {
 
   function callback(entries, observer) {
     entries.forEach((entry) => {
-      console.log(entry);
       if (entry.isIntersecting) {
         switch (entry.target.id) {
           case "home":
@@ -69,7 +68,12 @@ onMounted(() => {
           entry.target.classList.add("full");
           observer.unobserve(entry.target);
         }
-        if (entry.target.classList.contains("link")) {
+        if (
+          entry.target.classList.contains("link") ||
+          entry.target.classList.contains("text-container") ||
+          entry.target.classList.contains("cta-container") ||
+          entry.target.classList.contains("img-container")
+        ) {
           entry.target.classList.add("visible");
           observer.unobserve(entry.target);
         }
@@ -81,6 +85,15 @@ onMounted(() => {
   const sections = document.querySelectorAll("section");
   const skillBars = document.querySelectorAll(".skill-bar");
   const contactLinks = document.querySelectorAll(".socials .link");
+  const homeTextCta = document.querySelectorAll(
+    "#home .text-container, #home .cta-container"
+  );
+  const imgContainer = document.querySelector("#about .img-container");
+
+  observer.observe(imgContainer);
+  homeTextCta.forEach((el) => {
+    observer.observe(el);
+  });
 
   contactLinks.forEach((link) => {
     observer.observe(link);
@@ -242,6 +255,12 @@ onMounted(() => {
   max-width: 40vw;
   padding: 30vh 5vw 3vh 15vw;
   overflow: hidden;
+  transform: translate(0, 200px);
+  transition: transform 1s ease;
+}
+
+#home .text-container.visible {
+  transform: translate(0, 0);
 }
 
 #home .cta-container {
@@ -252,6 +271,12 @@ onMounted(() => {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  transform: translate(0, -200px);
+  transition: transform 1s ease;
+}
+
+#home .cta-container.visible {
+  transform: translate(0, 0);
 }
 
 @media only screen and (max-width: 768px) {
@@ -367,6 +392,14 @@ a.cta:hover {
 
 #about .img-container {
   width: 60vw;
+  opacity: 0;
+  transform: translate(200px, 0);
+  transition: opacity 2s, transform 1s ease;
+}
+
+#about .img-container.visible {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
 #about p,
@@ -526,7 +559,7 @@ img.portrait-photo {
   flex-direction: row;
   align-items: center;
   margin-bottom: 3vh;
-  transform: translate(-500px);
+  transform: translate(-200px);
   transition: all 1s ease;
 }
 

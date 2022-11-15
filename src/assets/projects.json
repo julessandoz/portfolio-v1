@@ -32,7 +32,7 @@
     },
     "AilesDeKatia": {
         "Name": "Les Ailes De Katia",
-        "Description": "My first project working on an already existing website. I was tasked with improving the site's technical SEO, to optimize its loading speed and to make it responsive.",
+        "Description": "My first project working on a pre-existing website. I was tasked with improving the site's technical SEO, to optimize its loading speed and to make it responsive.",
         "Categories": ["SEO"],
         "Technologies": ["Wordpress"],
         "Image": "./assets/projectImages/AilesDeKatia.jpg",
@@ -49,7 +49,7 @@
     },
     "HollywoodMovies": {
         "Name": "Dataviz - Hollywood Movies",
-        "Description": "",
+        "Description": "My first time using a Javascript library. In the context of a data visualization class during my second year at HEIG-VD, A friend and I created this visualization of the top grossing Hollywood movies of the past 50 years. We had to use the D3.js library and used data from a Kaggle dataset as well as images from themovieDB.org. The project was a great opportunity to learn about data visualization and svg manipulation.", 
         "Categories": ["Frontend", "Data Visualization"],
         "Technologies": ["D3.js", "HTML", "CSS", "JavaScript", "JSON"],
         "Image": "./assets/projectImages/Hollywood.jpg",
@@ -59,7 +59,7 @@
     },
     "CaveSandoz": {
         "Name": "Cave Sandoz",
-        "Description": "",
+        "Description": "My first ever coding project. After learning the basics of PHP and MySQL, I created this website for my family's wine cellar. It is a simple app that allows users to manage the cellar's wine bottles and keep track of what's available.",
         "Categories": ["Backend"],
         "Technologies": ["PHP", "MySQL", "HTML", "CSS"],
         "Image": "./assets/projectImages/CaveSandoz.jpg",
