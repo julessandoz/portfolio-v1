@@ -84,7 +84,6 @@ onMounted(() => {
 
   const sections = document.querySelectorAll("section");
   const skillBars = document.querySelectorAll(".skill-bar");
-  const contactLinks = document.querySelectorAll(".socials .link");
   const homeTextCta = document.querySelectorAll(
     "#home .text-container, #home .cta-container"
   );
@@ -93,10 +92,6 @@ onMounted(() => {
   observer.observe(imgContainer);
   homeTextCta.forEach((el) => {
     observer.observe(el);
-  });
-
-  contactLinks.forEach((link) => {
-    observer.observe(link);
   });
 
   skillBars.forEach((skillBar) => {
@@ -458,6 +453,8 @@ img.portrait-photo {
 
   #about .img-container {
     width: auto;
+    opacity: 1;
+    transform: translate(0, 0);
   }
 
   #about p,
@@ -559,12 +556,6 @@ img.portrait-photo {
   flex-direction: row;
   align-items: center;
   margin-bottom: 3vh;
-  transform: translate(-200px);
-  transition: all 1s ease;
-}
-
-.socials .link.visible {
-  transform: translate(0px);
 }
 
 .socials a {
