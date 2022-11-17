@@ -577,6 +577,7 @@ img.portrait-photo {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 20vh;
 }
