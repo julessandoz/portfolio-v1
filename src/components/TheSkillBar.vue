@@ -1,19 +1,17 @@
 <script setup>
-
 const props = defineProps({
   skill: {},
   percentage: {},
-  color: {}
+  color: {},
 });
-const colorDark = props.color.dark
-const colorLight = props.color.light
-
+const colorDark = props.color.dark;
+const colorLight = props.color.light;
 </script>
 
 <template>
   <p>{{ skill }}</p>
   <div class="bar-container">
-      <div class="skill-bar"></div>
+    <div class="skill-bar"></div>
   </div>
 </template>
 
@@ -51,13 +49,4 @@ const colorLight = props.color.light
 .light .skill-bar {
   background: v-bind(colorLight);
 }
-
-/* @keyframes skillBarAnimation {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: v-bind(percentage);
-  }
-} */
 </style>

@@ -139,8 +139,8 @@ onMounted(() => {
         <div class="img-container">
           <img
             class="portrait-photo"
-            v-webp:src="'./assets/jules-sandoz.webp'"
-            :src="'./assets/jules-sandoz.jpg'"
+            v-webp:src="'src/assets/jules-sandoz.webp'"
+            :src="'src/assets/jules-sandoz.jpg'"
             alt="Jules Sandoz"
           />
         </div>
@@ -170,7 +170,13 @@ onMounted(() => {
           </p>
           <div class="socials">
             <div class="link">
-              <font-awesome-icon icon="fa-brands fa-linkedin" fixed-width />
+              <a
+                href="https://www.linkedin.com/in/jules-sandoz"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <font-awesome-icon icon="fa-brands fa-linkedin" fixed-width />
+              </a>
               <a
                 class="contact-link"
                 href="https://www.linkedin.com/in/jules-sandoz"
@@ -180,7 +186,14 @@ onMounted(() => {
               >
             </div>
             <div class="link">
-              <font-awesome-icon icon="fa-brands fa-square-instagram" fixed-width /><a
+              <a
+                class="contact-link"
+                href="https://www.instagram.com/julessandoz/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <font-awesome-icon icon="fa-brands fa-square-instagram" fixed-width /> </a
+              ><a
                 class="contact-link"
                 href="https://www.instagram.com/julessandoz/"
                 target="_blank"
@@ -189,23 +202,37 @@ onMounted(() => {
               >
             </div>
             <div class="link">
-              <font-awesome-icon icon="fa-brands fa-square-github" fixed-width /><a
+              <a
                 class="contact-link"
-                href="github.com/julessandoz/"
+                href="https://github.com/julessandoz/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <font-awesome-icon icon="fa-brands fa-square-github" fixed-width /> </a
+              ><a
+                class="contact-link"
+                href="https://github.com/julessandoz/"
                 target="_blank"
                 rel="noopener noreferrer"
                 >/julessandoz</a
               >
             </div>
             <div class="link">
-              <font-awesome-icon icon="fa-solid fa-envelope" fixed-width /><a
-                class="contact-link"
-                href="mailto:contact@jules-sandoz.com"
+              <a class="contact-link" href="mailto:contact@jules-sandoz.com">
+                <font-awesome-icon icon="fa-solid fa-envelope" fixed-width /> </a
+              ><a class="contact-link" href="mailto:contact@jules-sandoz.com"
                 >contact@jules-sandoz.com</a
               >
             </div>
             <div class="link">
-              <font-awesome-icon icon="fa-solid fa-file" fixed-width /><a
+              <a
+                class="contact-link"
+                href="https://www.dropbox.com/s/tmg93yqnnv5lkgm/CV-JS.pdf?dl=1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <font-awesome-icon icon="fa-solid fa-file" fixed-width /> </a
+              ><a
                 class="contact-link"
                 href="https://www.dropbox.com/s/tmg93yqnnv5lkgm/CV-JS.pdf?dl=1"
                 target="_blank"
@@ -453,8 +480,8 @@ img.portrait-photo {
 
   #about .img-container {
     width: auto;
-    opacity: 1;
-    transform: translate(0, 0);
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
   }
 
   #about p,
@@ -532,7 +559,7 @@ img.portrait-photo {
 /*************************** CONTACT ***************************/
 #contact {
   width: 100%;
-  height: 87vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -546,14 +573,17 @@ img.portrait-photo {
 
 .socials {
   margin-top: 10vh;
+  width: 70vw;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20vh;
 }
 
 .socials .link {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   margin-bottom: 3vh;
 }
@@ -565,7 +595,7 @@ img.portrait-photo {
 
 .socials svg {
   font-size: 4em;
-  margin-right: 1vw;
+  margin-bottom: 0.5vh;
 }
 
 .dark svg {
