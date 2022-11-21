@@ -1,58 +1,59 @@
 <script setup>
-import { ref, watchEffect, computed } from 'vue';
+import { ref, watchEffect, computed } from "vue";
 /* import the fontawesome core */
-import { library } from '@fortawesome/fontawesome-svg-core'
+import { library } from "@fortawesome/fontawesome-svg-core";
 /* import font awesome icon component */
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
-library.add(faBars, faXmark)
-window.addEventListener('resize', checkScreen)
-window.addEventListener('hashchange', function () {
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+library.add(faBars, faXmark);
+window.addEventListener("resize", checkScreen);
+window.addEventListener("hashchange", function () {
   const hash = window.location.hash;
-  const navLinks = document.querySelectorAll('.links a');
-  navLinks.forEach(link => {
-    if (link.getAttribute('href') === hash) {
-      link.classList.add('active');
+  const navLinks = document.querySelectorAll(".links a");
+  navLinks.forEach((link) => {
+    if (link.getAttribute("href") === hash) {
+      link.classList.add("active");
     } else {
-      link.classList.remove('active');
+      link.classList.remove("active");
     }
   });
 });
 
-const displayMode = ref('light');
-const displayModeCode = ref('rgba(237, 230, 227, 0.95)');
-const logoPath = ref(`src/assets/logo-JS-${displayMode.value}.jpg`);
-const logoPathWebp = ref(`src/assets/logo-JS-${displayMode.value}.webp`);
+const displayMode = ref("light");
+const displayModeCode = ref("rgba(237, 230, 227, 0.95)");
+const logoPath = ref(`/logo-JS-${displayMode.value}.jpg`);
+const logoPathWebp = ref(`/logo-JS-${displayMode.value}.webp`);
 watchEffect(() => {
-  logoPath.value = `url(./logo-JS-${displayMode.value}.jpg)`;
-  logoPathWebp.value = `url(./logo-JS-${displayMode.value}.webp)`;
+  logoPath.value = `url(/logo-JS-${displayMode.value}.jpg)`;
+  logoPathWebp.value = `url(/logo-JS-${displayMode.value}.webp)`;
 });
 
 function toggleMode() {
-  displayMode.value === 'dark' ? displayMode.value = 'light' : displayMode.value = 'dark';
-  if (displayMode.value === 'dark') {
-    document.body.classList.remove('light');
-    document.body.classList.add('dark');
-    document.querySelectorAll('.theme-switcher-icon').forEach(icon => {
-      icon.classList.remove('lightMode');
-      icon.classList.add('darkMode');
-    })
-    displayModeCode.value = 'rgba(46, 80, 119, 0.95)';
+  displayMode.value === "dark"
+    ? (displayMode.value = "light")
+    : (displayMode.value = "dark");
+  if (displayMode.value === "dark") {
+    document.body.classList.remove("light");
+    document.body.classList.add("dark");
+    document.querySelectorAll(".theme-switcher-icon").forEach((icon) => {
+      icon.classList.remove("lightMode");
+      icon.classList.add("darkMode");
+    });
+    displayModeCode.value = "rgba(46, 80, 119, 0.95)";
   } else {
-    document.body.classList.remove('dark');
-    document.body.classList.add('light');
-    document.querySelectorAll('.theme-switcher-icon').forEach(icon => {
-      icon.classList.add('lightMode');
-      icon.classList.remove('darkMode');
-    })
-    displayModeCode.value = 'rgba(237, 230, 227, 0.95)'
-   
+    document.body.classList.remove("dark");
+    document.body.classList.add("light");
+    document.querySelectorAll(".theme-switcher-icon").forEach((icon) => {
+      icon.classList.add("lightMode");
+      icon.classList.remove("darkMode");
+    });
+    displayModeCode.value = "rgba(237, 230, 227, 0.95)";
   }
 }
 
 function toggleMobileNav() {
   mobileNav.value = !mobileNav.value;
-  document.body.style.overflowY = mobileNav.value ? 'hidden': 'auto';
+  document.body.style.overflowY = mobileNav.value ? "hidden" : "auto";
 }
 
 const mobile = ref(false);
@@ -66,11 +67,11 @@ function checkScreen() {
   windowWidth.value = window.innerWidth;
   if (windowWidth.value <= 768) {
     mobile.value = true;
-    return
+    return;
   }
-    mobile.value = false;
-    mobileNav.value = false;
-    return
+  mobile.value = false;
+  mobileNav.value = false;
+  return;
 }
 checkScreen();
 </script>
@@ -83,11 +84,13 @@ checkScreen();
           <div class="logo-img" v-webp:bgs="[logoPathWebp, logoPath]"></div>
         </a>
       </div>
-      <div class="hamb"><span class="hamburger" @click="toggleMobileNav()" v-if="displayHamburger">
-          <font-awesome-icon icon="fa-solid fa-bars" fixed-width />
-        </span><span class="xmark" @click="toggleMobileNav()" v-else>
+      <div class="hamb">
+        <span class="hamburger" @click="toggleMobileNav()" v-if="displayHamburger">
+          <font-awesome-icon icon="fa-solid fa-bars" fixed-width /> </span
+        ><span class="xmark" @click="toggleMobileNav()" v-else>
           <font-awesome-icon icon="fa-solid fa-xmark" fixed-width />
-        </span></div>
+        </span>
+      </div>
       <button class="side-menu" />
       <div class="links" v-show="!mobile">
         <a href="#about">About</a>
@@ -194,7 +197,7 @@ checkScreen();
   }
 
   .dropdown-links a.active {
-    color: #F06449;
+    color: #f06449;
   }
 
   .theme-switcher {
@@ -218,7 +221,7 @@ checkScreen();
   }
 }
 
-@media(min-width: 769px) {
+@media (min-width: 769px) {
   nav {
     height: auto;
     width: 100vw;
@@ -261,17 +264,16 @@ checkScreen();
   }
 
   .links a:hover:not(.active) {
-    color: #F06449;
+    color: #f06449;
     font-size: clamp(1.3rem, 1.1vw, 2rem);
-    -webkit-transition: font-size .5s;
-    -moz-transition: font-size .5s;
-    -o-transition: font-size .5s;
-    transition: font-size .5s;
-
+    -webkit-transition: font-size 0.5s;
+    -moz-transition: font-size 0.5s;
+    -o-transition: font-size 0.5s;
+    transition: font-size 0.5s;
   }
 
   .links a.active {
-    color: #F06449;
+    color: #f06449;
     font-weight: 500;
     cursor: default;
   }
