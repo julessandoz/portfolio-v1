@@ -4,8 +4,8 @@
         "Description": "A digital marketing project I realized during my first year of bachelor's degree. I created the website, the logo, the graphic design and the content. In addition to the website, I also created a whole digital ecosystem, including social media pages, a newsletter, SEA and SEO campaigns, and social media ads. The project was realized over two semesters and was a great opportunity to learn about digital marketing and widely used tools such as Google Analytics and the Search Console. Both the website and the project report are available online and can be viewed by clicking on the buttons below.",
         "Categories": ["Digital Marketing", "Web Design", "SEO", "Content Writing", "Social Media"],
         "Technologies": ["Wordpress", "Divi", "Mailchimp", "Google Analytics", "Google Search Console", "Google Ads", "Facebook Ads"],
-        "Image": "./assets/projectImages/ExperienceFlathead.jpg",
-        "WebP": "./assets/projectImages/ExperienceFlathead.webp",
+        "Image": "/projectImages/ExperienceFlathead.jpg",
+        "WebP": "/projectImages/ExperienceFlathead.webp",
         "Website": "https://ef.jules-sandoz.com/",
         "ProjectFolder": "https://www.dropbox.com/s/jgivfp49jsolqx5/Rapport-complet.pdf?dl=0"
     },
@@ -14,8 +14,8 @@
         "Description": "As part of my E-Commerce course, I created a website for a fictitious photography online store. The website was created using Wordpress, the Divi builder, and WooCommerce. I also created the logo, graphic identity, and social media pages. During the process I approached all the details of an Ecommerce business; from Amazon's affiliation program for photography gear to Print On Demand through Gelato for my posters. The website and project report are available online and can be viewed by clicking on the buttons below.",
         "Categories": ["Digital Marketing", "Web Design", "SEO", "Content Writing", "Social Media"],
         "Technologies": ["Wordpress", "Divi", "WooCommerce"],
-        "Image": "./assets/projectImages/EverythingPhotography.jpg",
-        "WebP": "./assets/projectImages/EverythingPhotography.webp",
+        "Image": "/projectImages/EverythingPhotography.jpg",
+        "WebP": "/projectImages/EverythingPhotography.webp",
         "Website": "https://ep.jules-sandoz.com/",
         "ProjectFolder": "https://www.dropbox.com/s/vwglbomg9ucq55t/HEIG-VD%20-%20E-comm%20-%20Sandoz%20Jules%20-%20Everything%20Photography.pdf?dl=0"
     },
@@ -24,8 +24,8 @@
         "Description": "In 2022, my class was tasked with creating a new web-app to view for students to view their timetables. We were grouped into teams of 7 to 8 and had to create the app from scratch over the course of a month. I was in charge of project management and had to coordinate UX, UI and development teams. In addition to the management side of the project, I helped both front-end and back-end developers with their tasks. The project was a great opportunity to learn about project management and to work in a team. The website, backend github and project report are available online and can be viewed by clicking on the buttons below.",
         "Categories": ["Backend", "Frontend", "Project Management", "Agile"],
         "Technologies": ["Laravel", "Vue3", "PostgreSQL", "Git"],
-        "Image": "./assets/projectImages/Kairos.jpg",
-        "WebP": "./assets/projectImages/Kairos.webp",
+        "Image": "/projectImages/Kairos.jpg",
+        "WebP": "/projectImages/Kairos.webp",
         "Website": "https://pnj-pingouin.heig-vd.ch/app/index.html",
         "Github": "https://github.com/julessandoz/ProjArt_BackEnd/",
         "ProjectFolder": "https://www.dropbox.com/s/3lr9xsklsre7s0a/pnj_Rapport_VersionFinale.pdf?dl=0"
@@ -35,8 +35,8 @@
         "Description": "My first project working on a pre-existing website. I was tasked with improving the site's technical SEO, to optimize its loading speed and to make it responsive.",
         "Categories": ["SEO"],
         "Technologies": ["Wordpress"],
-        "Image": "./assets/projectImages/AilesDeKatia.jpg",
-        "WebP": "./assets/projectImages/AilesDeKatia.webp",
+        "Image": "/projectImages/AilesDeKatia.jpg",
+        "WebP": "/projectImages/AilesDeKatia.webp",
         "Website": "https://lesailesdekatia.com/"
     },
     "ProjetBorderan":{
@@ -44,16 +44,16 @@
         "Description": "In 2021, I was hired to redesign a website for a local trustee company. I was tasked with applying a new graphic identity and reworking the architecture information as well as all the content to optimize UX and SEO. It was my first \"real-world\" project and, while it unfortunately went unfinished due to a lack of time and budget, it was a great opportunity to learn how to interract with a client.",
         "Categories": ["SEO", "Content Writing", "Web Design"],
         "Technologies": ["Wordpress", "Divi"],
-        "Image": "./assets/projectImages/ProjetBorderan.jpg",
-        "WebP": "./assets/projectImages/ProjetBorderan.webp"
+        "Image": "/projectImages/ProjetBorderan.jpg",
+        "WebP": "/projectImages/ProjetBorderan.webp"
     },
     "HollywoodMovies": {
         "Name": "Dataviz - Hollywood Movies",
         "Description": "My first time using a Javascript library. In the context of a data visualization class during my second year at HEIG-VD, A friend and I created this visualization of the top grossing Hollywood movies of the past 50 years. We had to use the D3.js library and used data from a Kaggle dataset as well as images from themovieDB.org. The project was a great opportunity to learn about data visualization and svg manipulation.", 
         "Categories": ["Frontend", "Data Visualization"],
         "Technologies": ["D3.js", "HTML", "CSS", "JavaScript", "JSON"],
-        "Image": "./assets/projectImages/Hollywood.jpg",
-        "WebP": "./assets/projectImages/Hollywood.webp",
+        "Image": "/projectImages/Hollywood.jpg",
+        "WebP": "/projectImages/Hollywood.webp",
         "Website": "https://hollywood.jules-sandoz.com/",
         "Github": "https://github.com/julessandoz/VisualDonProject_Hollywood_Movies"
     },
@@ -62,8 +62,8 @@
         "Description": "My first ever coding project. After learning the basics of PHP and MySQL, I created this website for my family's wine cellar. It is a simple app that allows users to manage the cellar's wine bottles and keep track of what's available.",
         "Categories": ["Backend"],
         "Technologies": ["PHP", "MySQL", "HTML", "CSS"],
-        "Image": "./assets/projectImages/CaveSandoz.jpg",
-        "WebP": "./assets/projectImages/CaveSandoz.webp",
+        "Image": "/projectImages/CaveSandoz.jpg",
+        "WebP": "/projectImages/CaveSandoz.webp",
         "Website": "https://pingouin.heig-vd.ch/~jules.sandoz/progserv/cave-sandoz/",
         "ProjectFolder": "https://pingouin.heig-vd.ch/~jules.sandoz/progserv/Sandoz-Projet-ProgServ.pdf"
     }

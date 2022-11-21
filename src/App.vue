@@ -139,8 +139,8 @@ onMounted(() => {
         <div class="img-container">
           <img
             class="portrait-photo"
-            v-webp:src="'./assets/jules-sandoz.webp'"
-            :src="'./assets/jules-sandoz.jpg'"
+            v-webp:src="'/jules-sandoz.webp'"
+            :src="'/jules-sandoz.jpg'"
             alt="Jules Sandoz"
           />
         </div>
