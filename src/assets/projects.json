@@ -1,23 +1,13 @@
 {
-    "ExperienceFlathead": {
-        "Name": "Experience Flathead",
-        "Description": "A digital marketing project I realized during my first year of bachelor's degree. I created the website, the logo, the graphic design and the content. In addition to the website, I also created a whole digital ecosystem, including social media pages, a newsletter, SEA and SEO campaigns, and social media ads. The project was realized over two semesters and was a great opportunity to learn about digital marketing and widely used tools such as Google Analytics and the Search Console. Both the website and the project report are available online and can be viewed by clicking on the buttons below.",
-        "Categories": ["Digital Marketing", "Web Design", "SEO", "Content Writing", "Social Media"],
-        "Technologies": ["Wordpress", "Divi", "Mailchimp", "Google Analytics", "Google Search Console", "Google Ads", "Facebook Ads"],
-        "Image": "/projectImages/ExperienceFlathead.jpg",
-        "WebP": "/projectImages/ExperienceFlathead.webp",
-        "Website": "https://ef.jules-sandoz.com/",
-        "ProjectFolder": "https://www.dropbox.com/s/jgivfp49jsolqx5/Rapport-complet.pdf?dl=0"
-    },
-    "EverythingPhotography": {
-        "Name": "Everything Photography",
-        "Description": "As part of my E-Commerce course, I created a website for a fictitious photography online store. The website was created using Wordpress, the Divi builder, and WooCommerce. I also created the logo, graphic identity, and social media pages. During the process I approached all the details of an Ecommerce business; from Amazon's affiliation program for photography gear to Print On Demand through Gelato for my posters. The website and project report are available online and can be viewed by clicking on the buttons below.",
-        "Categories": ["Digital Marketing", "Web Design", "SEO", "Content Writing", "Social Media"],
-        "Technologies": ["Wordpress", "Divi", "WooCommerce"],
-        "Image": "/projectImages/EverythingPhotography.jpg",
-        "WebP": "/projectImages/EverythingPhotography.webp",
-        "Website": "https://ep.jules-sandoz.com/",
-        "ProjectFolder": "https://www.dropbox.com/s/vwglbomg9ucq55t/HEIG-VD%20-%20E-comm%20-%20Sandoz%20Jules%20-%20Everything%20Photography.pdf?dl=0"
+    "SonsDeTaVille": {
+        "Name": "Sons de ta Ville API",
+        "Description": "My first Node project. I was the lead developer in the group project and produced about 85% of the code. The API is going to be used as the backend for an Angular mobile app.",
+        "Categories": ["Backend"],
+        "Technologies": ["NodeJS", "ExpressJS", "Mongoose", "MongoDB", "Render"],
+        "Image": "/projectImages/SonsDeTaVille.jpg",
+        "WebP": "/projectImages/SonsDeTaVille.webp",
+        "Website": "https://sons-de-ta-ville.onrender.com",
+        "Github": "https://github.com/julessandoz/SonsDeTaVille/"
     },
     "Kairos": {
         "Name": "Kairos",
@@ -56,6 +46,26 @@
         "WebP": "/projectImages/Hollywood.webp",
         "Website": "https://hollywood.jules-sandoz.com/",
         "Github": "https://github.com/julessandoz/VisualDonProject_Hollywood_Movies"
+    },
+    "ExperienceFlathead": {
+        "Name": "Experience Flathead",
+        "Description": "A digital marketing project I realized during my first year of bachelor's degree. I created the website, the logo, the graphic design and the content. In addition to the website, I also created a whole digital ecosystem, including social media pages, a newsletter, SEA and SEO campaigns, and social media ads. The project was realized over two semesters and was a great opportunity to learn about digital marketing and widely used tools such as Google Analytics and the Search Console. Both the website and the project report are available online and can be viewed by clicking on the buttons below.",
+        "Categories": ["Digital Marketing", "Web Design", "SEO", "Content Writing", "Social Media"],
+        "Technologies": ["Wordpress", "Divi", "Mailchimp", "Google Analytics", "Google Search Console", "Google Ads", "Facebook Ads"],
+        "Image": "/projectImages/ExperienceFlathead.jpg",
+        "WebP": "/projectImages/ExperienceFlathead.webp",
+        "Website": "https://ef.jules-sandoz.com/",
+        "ProjectFolder": "https://www.dropbox.com/s/jgivfp49jsolqx5/Rapport-complet.pdf?dl=0"
+    },
+    "EverythingPhotography": {
+        "Name": "Everything Photography",
+        "Description": "As part of my E-Commerce course, I created a website for a fictitious photography online store. The website was created using Wordpress, the Divi builder, and WooCommerce. I also created the logo, graphic identity, and social media pages. During the process I approached all the details of an Ecommerce business; from Amazon's affiliation program for photography gear to Print On Demand through Gelato for my posters. The website and project report are available online and can be viewed by clicking on the buttons below.",
+        "Categories": ["Digital Marketing", "Web Design", "SEO", "Content Writing", "Social Media"],
+        "Technologies": ["Wordpress", "Divi", "WooCommerce"],
+        "Image": "/projectImages/EverythingPhotography.jpg",
+        "WebP": "/projectImages/EverythingPhotography.webp",
+        "Website": "https://ep.jules-sandoz.com/",
+        "ProjectFolder": "https://www.dropbox.com/s/vwglbomg9ucq55t/HEIG-VD%20-%20E-comm%20-%20Sandoz%20Jules%20-%20Everything%20Photography.pdf?dl=0"
     },
     "CaveSandoz": {
         "Name": "Cave Sandoz",
