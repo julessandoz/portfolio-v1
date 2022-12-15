@@ -72,7 +72,8 @@ onMounted(() => {
           entry.target.classList.contains("link") ||
           entry.target.classList.contains("text-container") ||
           entry.target.classList.contains("cta-container") ||
-          entry.target.classList.contains("img-container")
+          entry.target.classList.contains("img-container") ||
+          entry.target.classList.contains("tile-container")
         ) {
           entry.target.classList.add("visible");
           observer.unobserve(entry.target);
@@ -88,6 +89,13 @@ onMounted(() => {
     "#home .text-container, #home .cta-container"
   );
   const imgContainer = document.querySelector("#about .img-container");
+  const projectTiles = document.querySelectorAll(
+    "#projects .projects-container .tile-container"
+  );
+
+  projectTiles.forEach((tile) => {
+    observer.observe(tile);
+  });
 
   observer.observe(imgContainer);
   homeTextCta.forEach((el) => {

@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watchEffect } from "vue";
+import { ref } from "vue";
 const props = defineProps({
   id: {},
   name: {},
@@ -96,12 +96,21 @@ function toggleModal(e) {
 <style>
 .tile-container {
   position: relative;
-  top: 0;
+  top: 4vh;
   left: 0;
   width: 400px;
   height: 400px;
   margin: 2% 0;
   border-radius: 5%;
+  transition: top 1s ease;
+}
+
+.tile-container.visible {
+  top: 0;
+}
+
+.modal-container .tile-container {
+  top: 0;
 }
 
 img {
