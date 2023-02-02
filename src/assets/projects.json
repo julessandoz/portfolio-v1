@@ -1,4 +1,14 @@
 {
+    "SonsDeTaVilleApp": {
+        "Name": "Sons de ta Ville App",
+        "Description": "My first mobile app. I was the lead developer in the group project and produced about 80% of the code. I also took part in the design and prototyping of the app. The app is going to be used as the frontend for the Sons de ta Ville API.",
+        "Categories": ["Frontend", "Project Management"],
+        "Technologies": ["Angular", "Ionic", "Git", "TypeScript"],
+        "Image": "/projectImages/SonsDeTaVilleApp.jpg",
+        "WebP": "/projectImages/SonsDeTaVilleApp.webp",
+        "Github": "https://github.com/julessandoz/SonsDeTaVilleFront",
+        "ProjectFolder": "https://audreycks.github.io/SonsDeTaVillePresentation/"
+    },
     "SonsDeTaVille": {
         "Name": "Sons de ta Ville API",
         "Description": "My first Node project. I was the lead developer in the group project and produced about 85% of the code. The API is going to be used as the backend for an Angular mobile app.",
@@ -11,7 +21,7 @@
     },
     "Kairos": {
         "Name": "Kairos",
-        "Description": "In 2022, my class was tasked with creating a new web-app to view for students to view their timetables. We were grouped into teams of 7 to 8 and had to create the app from scratch over the course of a month. I was in charge of project management and had to coordinate UX, UI and development teams. In addition to the management side of the project, I helped both front-end and back-end developers with their tasks. The project was a great opportunity to learn about project management and to work in a team. The website, backend github and project report are available online and can be viewed by clicking on the buttons below.",
+        "Description": "In 2022, my class created a web-app for students to view their timetables. Grouped into teams of 7-8, I managed the project and aided front-end and back-end developers. I got to coordinate UX, UI and development teams. It was a great learning experience in project management and teamwork.",
         "Categories": ["Backend", "Frontend", "Project Management", "Agile"],
         "Technologies": ["Laravel", "Vue3", "PostgreSQL", "Git", "JavaScript"],
         "Image": "/projectImages/Kairos.jpg",
@@ -38,7 +48,7 @@
         "WebP": "/projectImages/ProjetBorderan.webp"
     },
     "HollywoodMovies": {
-        "Name": "Dataviz - Hollywood Movies",
+        "Name": "Hollywood Movies Data Visualization",
         "Description": "My first time using a Javascript library. In the context of a data visualization class during my second year at HEIG-VD, A friend and I created this visualization of the top grossing Hollywood movies of the past 50 years. We had to use the D3.js library and used data from a Kaggle dataset as well as images from themovieDB.org. The project was a great opportunity to learn about data visualization and svg manipulation.", 
         "Categories": ["Frontend", "Data Visualization"],
         "Technologies": ["D3.js", "JavaScript", "Git"],
@@ -49,7 +59,7 @@
     },
     "ExperienceFlathead": {
         "Name": "Experience Flathead",
-        "Description": "A digital marketing project I realized during my first year of bachelor's degree. I created the website, the logo, the graphic design and the content. In addition to the website, I also created a whole digital ecosystem, including social media pages, a newsletter, SEA and SEO campaigns, and social media ads. The project was realized over two semesters and was a great opportunity to learn about digital marketing and widely used tools such as Google Analytics and the Search Console. Both the website and the project report are available online and can be viewed by clicking on the buttons below.",
+        "Description": "After learning digital marketing, I created a website with logo, graphic design and content. I also built a digital ecosystem with social media pages, a newsletter, SEA & SEO campaigns, and social media ads. This project took two semesters and gave me an opportunity to learn digital marketing and tools like Google Analytics & Search Console.",
         "Categories": ["Digital Marketing", "Web Design", "SEO", "Content Writing", "Social Media"],
         "Technologies": ["Wordpress", "Divi", "Mailchimp", "Google Analytics", "Google Search Console"],
         "Image": "/projectImages/ExperienceFlathead.jpg",
@@ -59,7 +69,7 @@
     },
     "EverythingPhotography": {
         "Name": "Everything Photography",
-        "Description": "As part of my E-Commerce course, I created a website for a fictitious photography online store. The website was created using Wordpress, the Divi builder, and WooCommerce. I also created the logo, graphic identity, and social media pages. During the process I approached all the details of an Ecommerce business; from Amazon's affiliation program for photography gear to Print On Demand through Gelato for my posters. The website and project report are available online and can be viewed by clicking on the buttons below.",
+        "Description": "I created a website for a fictitious photography store as part of my E-Commerce course. I used Wordpress, Divi, and WooCommerce, and created the logo, graphic identity, and social media pages. I also explored Amazon's affiliation program for photography gear and Print On Demand through Gelato for posters.",
         "Categories": ["Digital Marketing", "Web Design", "SEO", "Content Writing", "Social Media"],
         "Technologies": ["Wordpress", "Divi", "WooCommerce", "Mailchimp", "Google Analytics", "Google Search Console"],
         "Image": "/projectImages/EverythingPhotography.jpg",

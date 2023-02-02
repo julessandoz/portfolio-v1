@@ -14,16 +14,21 @@ const props = defineProps({
 });
 const modal = ref(false);
 const bgColor = ref();
+const accentColor = ref();
 function toggleModal(e) {
-  console.log(e.target.classList.contains("toggle"));
   if (e.target.classList.contains("toggle")) {
     modal.value = !modal.value;
     modal.value
       ? (document.body.style.overflow = "hidden")
       : (document.body.style.overflow = "visible");
-    document.body.classList.contains("dark")
-      ? (bgColor.value = "#2e5077")
-      : (bgColor.value = "#ede6e3");
+
+    if (document.body.classList.contains("dark")) {
+      bgColor.value = "#2e5077";
+      accentColor.value = "#ede6e3";
+    } else {
+      accentColor.value = "#2e5077";
+      bgColor.value = "#ede6e3";
+    }
   }
 }
 </script>
@@ -105,7 +110,12 @@ function toggleModal(e) {
   transition: top 1s ease;
 }
 
-.tile-container.visible {
+.more-container .tile-container {
+  transition: all 1s ease;
+}
+
+.tile-container.visible,
+.more-container .tile-container {
   top: 0;
 }
 
@@ -150,6 +160,7 @@ img {
   color: #ede6e3;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .tile-container:hover .overlay-text {
@@ -200,7 +211,6 @@ img {
   position: relative;
   width: 80%;
   height: 65%;
-  padding-top: 5%;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -219,7 +229,7 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 10% 0;
+  margin: 5% 0;
 }
 
 .project-link {
@@ -228,9 +238,9 @@ img {
   color: #ede6e3;
   text-decoration: none;
   text-align: center;
-  width: 20%;
+  width: auto;
   height: 70%;
-  padding-top: 3%;
+  padding: 3% 3% 0 3%;
   background-color: #f06449;
   border-radius: 5%;
 }
@@ -247,14 +257,17 @@ img {
   align-items: center;
   padding: 0 5%;
   margin: 0;
+  list-style-type: none;
 }
 
 .tech-item {
-  /* list-style: none; */
   font-size: 1rem;
   font-weight: medium;
   margin: 1%;
-  padding: 0;
+  padding: 2%;
+  border: 1px solid;
+  border-radius: 5%;
+  border-color: v-bind(accentColor);
 }
 
 .closeBtn {
@@ -291,6 +304,7 @@ img {
   background-color: rgba(237, 230, 227, 0.6);
   color: #2e5077;
   font-size: 2.3rem;
+  text-align: center;
 }
 @media only screen and (max-width: 768px) {
   .tile-overlay {

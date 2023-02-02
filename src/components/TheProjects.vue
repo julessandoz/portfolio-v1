@@ -7,8 +7,8 @@ const projectsArray = [];
 const projectsCount = ref(projectsArray.length);
 const showMore = ref(false);
 const showMoreBtn = ref(projectsCount.value > 6);
-const categories = new Set();
-const technologies = new Set();
+let categories = new Set();
+let technologies = new Set();
 const allProjects = [];
 const projectKey = ref(0);
 for (let i = 0; i < projectsKeys.value.length; i++) {
@@ -31,6 +31,49 @@ for (let i = 0; i < projectsKeys.value.length; i++) {
     technologies.add(tech);
   });
 }
+const categoriesArray = Array.from(categories);
+const middleIndex = Math.floor(categoriesArray.length / 2);
+const firstHalf = categoriesArray
+  .slice(0, middleIndex)
+  .sort((a, b) => b.length - a.length);
+const secondHalf = categoriesArray.slice(middleIndex).sort((a, b) => a.length - b.length);
+
+let optimizedCategories = [];
+for (let i = 0; i < firstHalf.length; i++) {
+  optimizedCategories.push(firstHalf[i]);
+  if (secondHalf[i]) {
+    optimizedCategories.push(secondHalf[i]);
+  }
+}
+if (secondHalf.length > firstHalf.length) {
+  optimizedCategories.push(secondHalf[secondHalf.length - 1]);
+}
+
+categories = new Set(optimizedCategories);
+
+// do the same for technologies
+
+const technologiesArray = Array.from(technologies);
+const middleIndexTech = Math.floor(technologiesArray.length / 2);
+const firstHalfTech = technologiesArray
+  .slice(0, middleIndexTech)
+  .sort((a, b) => b.length - a.length);
+const secondHalfTech = technologiesArray
+  .slice(middleIndexTech)
+  .sort((a, b) => a.length - b.length);
+
+let optimizedTechnologies = [];
+for (let i = 0; i < firstHalfTech.length; i++) {
+  optimizedTechnologies.push(firstHalfTech[i]);
+  if (secondHalfTech[i]) {
+    optimizedTechnologies.push(secondHalfTech[i]);
+  }
+}
+if (secondHalfTech.length > firstHalfTech.length) {
+  optimizedTechnologies.push(secondHalfTech[secondHalfTech.length - 1]);
+}
+
+technologies = new Set(optimizedTechnologies);
 
 const showCategoriesFilter = ref(false);
 const showTechnologiesFilter = ref(false);
@@ -257,7 +300,7 @@ updateProjectsArray();
   cursor: pointer;
   border: 2px solid #3c6799;
   border-radius: 5px;
-  width: 15vw;
+  width: auto;
   height: 3.5vh;
   transition: background-color 0.3s ease-in-out;
 }
@@ -277,7 +320,7 @@ updateProjectsArray();
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
   margin: 0 0 2vh 0;
   padding: 0;
@@ -290,10 +333,10 @@ updateProjectsArray();
   align-items: center;
   border: 2px solid #3c6799;
   border-radius: 5px;
-  width: 15vw;
+  width: auto;
   height: 2.5vh;
-  margin: 0 0 1vh 0;
-  padding: 0;
+  margin: 0 3vw 1vh 0;
+  padding: 1% 2%;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -336,6 +379,11 @@ updateProjectsArray();
   width: 80%;
   margin: 0;
   padding: 0vh 5vw 5vh 13vw;
+}
+
+.more-container {
+  width: 100%;
+  padding: 0;
 }
 
 .cta-container {
