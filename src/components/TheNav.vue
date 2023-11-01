@@ -74,13 +74,20 @@ function checkScreen() {
   return;
 }
 checkScreen();
+
+function scrollToSection(e) {
+  e.preventDefault();
+  let target = e.target.attributes.href ? e.target.attributes.href.value : "#home";
+  const section = document.querySelector(target);
+  section.scrollIntoView({ behavior: "smooth" });
+}
 </script>
 
 <template>
   <nav>
     <div class="nav-container">
       <div class="logo">
-        <a href="#home">
+        <a href="#home" @click="scrollToSection($event)">
           <div class="logo-img" v-webp:bgs="[logoPathWebp, logoPath]"></div>
         </a>
       </div>
@@ -93,10 +100,10 @@ checkScreen();
       </div>
       <button class="side-menu" />
       <div class="links" v-show="!mobile">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" @click="scrollToSection($event)">About</a>
+        <a href="#skills" @click="scrollToSection($event)">Skills</a>
+        <a href="#projects" @click="scrollToSection($event)">Projects</a>
+        <a href="#contact" @click="scrollToSection($event)">Contact</a>
         <div class="theme-switcher">
           <div class="theme-switcher-icon lightMode" @click="toggleMode()"></div>
         </div>
